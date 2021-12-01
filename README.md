@@ -90,6 +90,17 @@ docker start {container_name}
 docker start nginx 
 ``` 
 
+__For fetching the logs of a container in your docker :__ 
+
+docker logs {container_name}
+
+docker logs -f {container_name}
+
+```
+docker logs nginx 
+``` 
+
+
 __For removing container in your docker :__  
 
 docker rm {container_name}
@@ -102,6 +113,15 @@ docker rm nginx
 #for force remove container while it is still in process/running  
 
 docker rm -f nginx 
+``` 
+
+__For removing image in your docker :__  
+
+docker rmi {image_name:version}
+
+```
+docker rmi nginx
+
 ``` 
     
 
